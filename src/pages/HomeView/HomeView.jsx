@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HomeView = () => {
+export const HomeView = () => {
   return (
     <div>
       <h1>Phonebook</h1>
@@ -8,5 +8,4 @@ const HomeView = () => {
   );
 };
 
-export default HomeView;
 
