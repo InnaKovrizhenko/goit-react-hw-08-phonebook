@@ -1,20 +1,24 @@
-// import { useDispatch } from 'react-redux';
-// import authOperations from 'redux/auth/auth-operations';
+import { useDispatch } from 'react-redux';
 import { Form, TextFiled, Label, Btn } from './LoginForm.styled';
+import { logIn } from 'redux/auth/auth-operations';
+
 
 export const LoginForm = () => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const onSubmitForm = event => {
     event.preventDefault();
+    const form = event.currentTarget;
+    dispatch(logIn({
+      email: form.elements.email.value,
+      password: form.elements.password.value,
+    }))
 
   }
-
 
   return (
     <div>
       <h1>Login form</h1>
-
       <Form
       onSubmit={onSubmitForm}
       autoComplete="off">

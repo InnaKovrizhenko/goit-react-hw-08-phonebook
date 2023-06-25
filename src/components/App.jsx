@@ -29,19 +29,11 @@
 // }
 
 import { Routes, Route } from 'react-router-dom';
-// import { Suspense, lazy } from 'react';
 import { RegisterView } from 'pages/RegisterView/RegisterView';
 import { LoginView } from 'pages/LoginView/LoginView';
 import { HomeView } from 'pages/HomeView/HomeView';
 import { AppBar } from './AppBar/AppBar';
 
-
-
-// const HomeView = lazy(() => import('../pages/HomeView/HomeView'));
-// const RegisterView = lazy(() => import('../pages/RegisterView/RegisterView'));
-// const LoginView = lazy(() => import('../pages/LoginView/LoginView'));
-// const ContactsView = lazy(() => import('../pages/ContactsView/ContactsView'));
-// const AppBar = lazy(() => import('./AppBar/AppBar'));
 
 // import authOperations from 'redux/auth/auth-operations';
 // import { useDispatch } from 'react-redux';
@@ -55,7 +47,6 @@ export const App = () => {
 
   return (
     <>
-    {/* <Suspense> */}
     <Routes>
         <Route path="/" element={<AppBar />}>
           <Route index element={<HomeView />} />
@@ -64,8 +55,6 @@ export const App = () => {
           {/* <Route path="contacts" component={<ContactsView />} /> */}
         </Route>
     </Routes>
-    {/* </Suspense> */}
-
     </>
   );
 };

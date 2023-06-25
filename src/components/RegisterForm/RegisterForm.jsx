@@ -3,10 +3,8 @@ import { useDispatch } from 'react-redux';
 import { Form, TextFiled, Label, Btn } from './RegisterForm.styled';
 import { register } from 'redux/auth/auth-operations';
 
-
 export const RegisterForm = () => {
   const dispatch = useDispatch();
-
 
   const onSubmitForm = event => {
     event.preventDefault();
