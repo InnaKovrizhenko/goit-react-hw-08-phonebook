@@ -13,9 +13,7 @@ list-style: none;
 margin-bottom: 10px;
 display: flex;
 justify-content: space-between;
-overflow: auto;
 `
-
 export const Deletebutton = styled.button`
 margin-left: 10px;
 
