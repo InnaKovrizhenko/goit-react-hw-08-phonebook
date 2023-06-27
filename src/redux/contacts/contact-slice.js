@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { fetchContacts, addContact, deleteContact } from './fetchAPI';
+import { fetchContacts, addContact, deleteContact, clearContacts } from './contact-operations';
 
 const initialContactsState = {
     items: [],
@@ -47,6 +47,10 @@ export const contactSlice = createSlice({
     .addCase(deleteContact.rejected, (state, { payload }) => {
       state.isLoading = false;
       state.error = payload;
+    })
+    .addCase(clearContacts.fulfilled, (state, { payload }) => {
+      state.isLoading = false;
+      state.items = [];
     })
   }
 });

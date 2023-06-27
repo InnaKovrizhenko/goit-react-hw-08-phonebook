@@ -1,11 +1,10 @@
 import { useState } from 'react'
-import { nanoid } from 'nanoid';
-import { FormForContact, AddButton, Span, Input } from './ContactForm.styled';
+import { FormForContact, AddButton, Span1, Span2, Input } from './ContactForm.styled';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { getContacts } from 'redux/contacts/contactSelector';
-import { addContact } from 'redux/contacts/fetchAPI';
+import { getContacts } from 'redux/contacts/contact-selector';
+import { addContact } from 'redux/contacts/contact-operations';
 
 export const ContactForm = () => {
   const [name, setName] = useState('');
@@ -24,7 +23,6 @@ export const ContactForm = () => {
   const onSubmitForm = e => {
     e.preventDefault();
     const contact = {
-      id: nanoid(5),
       name: name,
       number: number,
     };
@@ -44,7 +42,7 @@ export const ContactForm = () => {
     return (
       <FormForContact onSubmit={onSubmitForm} action="">
         <label>
-          <Span>Name</Span>
+          <Span1>Name</Span1>
           <Input
             value={name}
             type="text"
@@ -56,7 +54,7 @@ export const ContactForm = () => {
           />
         </label>
         <label>
-          <Span>Number</Span>
+          <Span2>Number</Span2>
           <Input
             value={number}
             type="tel"

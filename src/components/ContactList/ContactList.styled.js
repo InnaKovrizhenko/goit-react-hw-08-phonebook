@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const Span = styled.span`
 font-weight: 500;
-font-size: 20px;
+font-size: 18px;
 line-height: 1.62;
+color: white;
 margin-right: 10px;
 `
 
@@ -11,16 +12,17 @@ export const ListContacts = styled.li`
 list-style: none;
 margin-bottom: 10px;
 display: flex;
-justify-content: flex-start;
+justify-content: space-between;
+overflow: auto;
 `
 
 export const Deletebutton = styled.button`
 margin-left: 10px;
 
-color: #000000;
-background-color: #B0C4DE;
+color: white;
+background-color: #FF967E;
 font-weight: 400;
-font-size: 15px;
+font-size: 10px;
 line-height: 1.62;
 font-style: italic;
 cursor: pointer;
@@ -29,7 +31,7 @@ display: inline-block;
 border: 1px solid transparent;
 border-radius: 20px;
 padding: 6px 15px;
-width: 100px;
+width: 50px;
 text-align: center;
 transition: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1),
             background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),

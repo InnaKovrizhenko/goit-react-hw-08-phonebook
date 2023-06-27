@@ -16,22 +16,15 @@ margin-bottom: 20px;
 font-size: 20px;
 `
 
-export const Span1 = styled.span`
+export const Span = styled.span`
 font-weight: 600;
 font-size: 18px;
 color: white;
 line-height: 1.62;
 margin-right: 30px;
 `
-export const Span2 = styled.span`
-font-weight: 600;
-font-size: 18px;
-color: white;
-line-height: 1.62;
-margin-right: 10px;
-`
 
-export const AddButton = styled.button`
+export const LogButton = styled.button`
 color: white;
 background-color: #FF967E;
 font-weight: 500;
@@ -42,7 +35,7 @@ cursor: pointer;
 border: 1px solid transparent;
 border-radius: 20px;
 padding: 6px 15px;
-width: 200px;
+width: 100px;
 text-align: center;
 transition: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1),
             background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),

@@ -8,16 +8,16 @@ export const FilterInput = styled.input`
 
 export const Span = styled.span`
 font-weight: 600;
-font-size: 20px;
+font-size: 16px;
+color: white;
 line-height: 1.62;
 margin-right: 10px;
 `
 
 export const Input = styled.input`
-
 border-radius: 10px;
 padding: 5px 10px;
-width: 200px;
+width: 160px;
 margin-bottom: 20px;
 font-size: 20px;
 `

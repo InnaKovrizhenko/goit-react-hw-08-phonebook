@@ -1,11 +1,16 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-margin: auto;
-margin-left: 15px;
-margin-right: 15px;
-padding-left: 15px;
-padding-right: 15px;
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
+padding: 0 15px;
+
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background: linear-gradient(#6a11cb, #2575fc);
+background-size: 100%;
 `
 export const Header = styled.header`
 display: flex;
@@ -17,6 +22,5 @@ padding: 15px;
 
 border-bottom: 2px solid;
 border-image: linear-gradient(to right, #ffffff, #90acaa, #6A9393, #ffffff ) 47% 0%;
-
 
 `
