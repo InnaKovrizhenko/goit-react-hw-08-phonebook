@@ -1,16 +1,22 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-max-width: 1200px;
 margin-left: auto;
 margin-right: auto;
 padding: 0 15px;
 
-display: flex;
-flex-direction: column;
 min-height: 100vh;
 background: linear-gradient(#6a11cb, #2575fc);
 background-size: 100%;
+
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+`
+
+export const Main = styled.main`
+flex: 1;
+min-height: 100%;
 `
 export const Header = styled.header`
 display: flex;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
 text-align: center;
@@ -63,3 +64,15 @@ transition: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 0px 1px 2px rgba(0, 0, 0, 0.08),
                 0px 3px 1px rgba(0, 0, 0, 0.1);
 }`;
+
+export const InRegistrer = styled(Link)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  color: white;
+  font-size: 18px;
+
+  margin-top: 15px;
+
+`;

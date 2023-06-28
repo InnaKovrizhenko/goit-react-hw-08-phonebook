@@ -5,7 +5,6 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding: 15px;
-flex: 0 0 auto;
 
 border-top: 2px solid;
 border-image: linear-gradient(to right, #ffffff, #90acaa, #6A9393, #ffffff ) 47% 0%;
@@ -20,3 +19,4 @@ export const IconLink = styled.a`
     color: 	#FF967E;
   }
 `;
+

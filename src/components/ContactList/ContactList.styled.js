@@ -38,7 +38,7 @@ transition: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1),
 &:hover,
 &:focus {
     font-weight: 700;
-    background-color: #B0C4DE;
+    background-color: #FF967E;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12),
                 0px 1px 2px rgba(0, 0, 0, 0.08),
                 0px 3px 1px rgba(0, 0, 0, 0.1);
